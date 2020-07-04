@@ -5,6 +5,7 @@
         <div class="danger-left">
            <TodayFlow></TodayFlow>
            <Entrance></Entrance>
+           <PlaceOrigin></PlaceOrigin>
         </div>
         <!-- <div class="danger-right">
            <TodayFlow></TodayFlow>
@@ -15,14 +16,17 @@
 
 <script>
 import DpHeader from '../../components/content/DpHeader'
-import TodayFlow from './children/TodayFlow'
-import Entrance from './children/Entrance'
+
+import TodayFlow from './children/TodayFlow' 
+import Entrance from './children/Entrance' 
+import PlaceOrigin from './children/PlaceOrigin' 
 export default {
   name:'DangerousChemicals',
   components:{
     DpHeader,
     TodayFlow,
-    Entrance
+    Entrance,
+    PlaceOrigin
   }
 }
 </script>
