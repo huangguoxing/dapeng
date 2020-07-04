@@ -7,9 +7,12 @@
            <Entrance></Entrance>
            <PlaceOrigin></PlaceOrigin>
         </div>
-        <!-- <div class="danger-right">
-           <TodayFlow></TodayFlow>
-        </div> -->
+        <div class="danger-right">
+          <RoadAccess></RoadAccess>
+          <TrafficDistribution></TrafficDistribution>
+          <CartCall></CartCall>
+          <TrackQuery></TrackQuery>
+        </div>
    </div>
   </div>
 </template>
@@ -20,13 +23,22 @@ import DpHeader from '../../components/content/DpHeader'
 import TodayFlow from './children/TodayFlow' 
 import Entrance from './children/Entrance' 
 import PlaceOrigin from './children/PlaceOrigin' 
+
+import RoadAccess from './children/RoadAccess'
+import TrafficDistribution from './children/TrafficDistribution'
+import CartCall from './children/CartCall'
+import TrackQuery from './children/TrackQuery'
 export default {
   name:'DangerousChemicals',
   components:{
     DpHeader,
     TodayFlow,
     Entrance,
-    PlaceOrigin
+    PlaceOrigin,
+    RoadAccess,
+    TrafficDistribution,
+    CartCall,
+    TrackQuery
   }
 }
 </script>
@@ -42,7 +54,8 @@ export default {
    //background: pink;
  }
  .danger-right{
-   width:12.76rem;
-   background: pink;
+  // width:12.76rem;
+   width:21rem;
+  // background: pink;
  }
 </style>

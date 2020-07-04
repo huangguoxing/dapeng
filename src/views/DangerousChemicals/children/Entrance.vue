@@ -119,13 +119,13 @@ export default {
       .hours,.days,.month{
         display: inline-block;
         width: 3rem;
-        height: 1.3rem;
+        height: 1.2rem;
         border: 2px solid #32fdf6;
         border-radius: 4px 0px 0px 4px;
         background: #32FDF6;
         font-size: 0.42rem;
         text-align: center;
-        line-height: 1.3rem;
+        line-height: 1.2rem;
       }
       .days{
         border-radius:0 0;
