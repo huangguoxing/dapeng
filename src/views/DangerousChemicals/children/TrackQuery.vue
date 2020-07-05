@@ -1,7 +1,7 @@
 <template>
   <div class="track-query">
     <h3>车辆轨迹特征查询</h3>
-     <img class="undeline" src="../../../assets/images/flow.png" alt="">
+      <TitleUpperLine></TitleUpperLine>
      <div>
        <input type="text" placeholder="请输入车牌号">
      </div>
@@ -9,8 +9,11 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-
+ components:{
+   TitleUpperLine
+ }
 }
 </script>
 
@@ -22,11 +25,5 @@ export default {
       font-weight:bolder;
       margin-top:1rem;
      }
-     .undeline{
-     width: 12.48rem;
-     height: 0.18rem;
-     padding-bottom: 0.63rem;
-     margin-top: 0.32rem;
-    }
   }
 </style>

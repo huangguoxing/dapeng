@@ -5,7 +5,7 @@
        <span class="drive-in">驶入</span>
        <span class="drive-out">驶出</span>
      </div>
-     <img class="undeline" src="../../../assets/images/flow.png" alt="">
+     <TitleUpperLine></TitleUpperLine>
      <div class="place-chart">
 
      </div>
@@ -13,8 +13,11 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-
+  components:{
+    TitleUpperLine
+  }
 }
 </script>
 
@@ -55,12 +58,6 @@ export default {
     text-align: center;
     line-height: 1.1rem;
   }
-   .undeline{
-     width: 12.48rem;
-     height: 0.18rem;
-     padding-bottom: 0.63rem;
-     margin-top: 0.32rem;
-    }
   .place-chart{
     width: 20.89rem;
     height: 6.88rem;

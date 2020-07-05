@@ -1,7 +1,7 @@
 <template>
   <div class="traffic-distribution">
      <h3>主要路短通行量时间分布</h3>
-     <img class="undeline" src="../../../assets/images/flow.png" alt="">
+     <TitleUpperLine></TitleUpperLine>
       <div class="chack-change">
         <span class="hours">时</span>
         <span class="days">日</span>
@@ -20,8 +20,11 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-
+  components: {
+    TitleUpperLine
+  }
 }
 </script>
 

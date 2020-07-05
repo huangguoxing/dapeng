@@ -16,7 +16,7 @@ export default {
     .warning{
       width:60.58rem;
       height:1rem;
-      background: url('../../assets/images/渐变阴影.png');
+      background: url('../../assets/images/warning_background.png');
       background-size: 100% 100%;
       position: absolute;
       bottom:3.78rem;

@@ -36,14 +36,14 @@ export default {
 .headerLine {
   width: 100%;
   height: 3.34rem;
-  background: url("../../assets/images/全屏头部.png");
+  background: url("../../assets/images/header_background.png");
   background-size: 100% 100%;
 }
 .titleLine {
   width: 28.6rem;
   height: 2.04rem;
   margin: 0 auto;
-  background: url("../../assets/images/组.png");
+  background: url("../../assets/images/check_title.png");
   background-size: 100% 100%;
 }
 .theme{

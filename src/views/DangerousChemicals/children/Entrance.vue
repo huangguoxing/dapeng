@@ -6,7 +6,7 @@
         <span class="drive-in">驶入</span>
         <span class="drive-out">驶出</span>
       </div>
-      <img class="undeline" src="../../../assets/images/flow.png" alt="">
+      <TitleUpperLine></TitleUpperLine>
       <div class="chack-change">
         <span class="hours">时</span>
         <span class="days">日</span>
@@ -29,9 +29,12 @@
 <script>
 import echarts from "echarts";
 import echartsRem from "../../../../utils/echartRem.js";
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
   name: "sharkChart",
-  components: {},
+  components: {
+    TitleUpperLine
+  },
   data() {
     return {
       echart: null,
@@ -107,12 +110,6 @@ export default {
       color: #FFFFFF;
       text-align: center;
       line-height: 1.1rem;
-    }
-    .undeline{
-     width: 12.48rem;
-     height: 0.18rem;
-     padding-bottom: 0.63rem;
-     margin-top: 0.32rem;
     }
     .chack-change{
       display: flex;

@@ -1,7 +1,7 @@
 <template>
   <div class="road-access">
     <h3>主要路段通行量排名</h3>
-    <img class="undeline" src="../../../assets/images/flow.png" alt="">
+     <TitleUpperLine></TitleUpperLine>
     <div class="road-access-chart">
 
     </div>
@@ -9,8 +9,12 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-   name:'RoadAccess'
+   name:'RoadAccess',
+   components:{
+     TitleUpperLine
+   }
 }
 </script>
 

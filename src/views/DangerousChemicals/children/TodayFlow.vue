@@ -1,7 +1,7 @@
 <template>
   <div class="todayFlow">
       <h3>今日车流量</h3>
-      <img class="undeline" src="../../../assets/images/flow.png" alt="">
+       <TitleUpperLine></TitleUpperLine>
       <ul class="carType">
         <li class="carItem">
           <div class="carIcon">
@@ -62,17 +62,16 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-
+  components: {
+    TitleUpperLine
+  }
 }
 </script>
 
 <style lang="scss">
 .todayFlow{
-  .undeline{
-   width: 12.48rem;
-   height: 0.18rem;
- }
  h3{
   color: #ffffff;
   font-size:0.87rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="car-call">
       <h3>车辆报警分析</h3>
-       <img class="undeline" src="../../../assets/images/flow.png" alt="">
+      <TitleUpperLine></TitleUpperLine>
        <div>
           <select name="" id="" class="select-road">
             <option value="">超速行驶</option>
@@ -16,8 +16,12 @@
 </template>
 
 <script>
+import TitleUpperLine from '../../../components/content/TitleUpperLine'
 export default {
-
+    name:'CarCall',
+    components: {
+    TitleUpperLine
+  }
 }
 </script>
 
@@ -27,12 +31,6 @@ export default {
     font-size:0.87rem;
     font-weight:bolder;
     color:rgba(255,255,255,1);
-  }
-  .undeline{
-     width: 12.48rem;
-     height: 0.18rem;
-     padding-bottom: 0.63rem;
-     margin-top: 0.32rem;
   }
   .select-road{
     width: 7.3rem;
