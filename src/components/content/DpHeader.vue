@@ -12,7 +12,7 @@
             <li class="drop-down-container">交通运行
               <ul class="drop-down">
                 <li>交通运行</li>
-                <li>危化品车</li>
+                <li @click="dangerousChemicals">危化品车</li>
                 <li @click="toMudTruck">泥头车</li>
                 <li>公交运力</li>
               </ul>
@@ -38,6 +38,9 @@ export default {
   methods:{
    toMudTruck(){
      this.$router.push('/MudTruck')
+   },
+   dangerousChemicals(){
+     this.$router.push('/')
    }
   }
 }

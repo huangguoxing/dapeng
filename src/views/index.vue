@@ -1,5 +1,5 @@
 <template>
-  <div class="views">
+  <div id="views">
    <router-view/>
   </div>
 </template>
@@ -28,7 +28,7 @@ methods: {
   // }
   init(){
     const LongMap = window.LongMap;
-    const map = new LongMap("app");
+    const map = new LongMap("views");
     const point= new LongMap.Point3(114.4712054185026,22.596857503259457,8000)
     map.move(point);
     // const layer=new LongMap.Layer();   //创建图层

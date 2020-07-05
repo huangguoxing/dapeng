@@ -50,6 +50,12 @@ export default {
 </script>
 
 <style lang="scss">
+.danger{
+  position:absolute;
+  height:100%;
+  width:100%;
+  z-index: 2;
+}
  .danger-chart{
    display: flex;
    justify-content: space-between;
