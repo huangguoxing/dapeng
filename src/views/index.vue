@@ -9,7 +9,7 @@
 export default {
 name:'views',
 mounted() {
-   this.init();
+  //  this.init();
 },
 methods: {
   // init() {
