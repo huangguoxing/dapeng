@@ -1,7 +1,12 @@
 <template>
-  <div class="traffic-distribution">
-     <h3>主要路短通行量时间分布</h3>
-     <TitleUpperLine></TitleUpperLine>
+  <div class="entrance">
+      <div class="entrance-title">
+        <span class="entrance-ranking">出入口排名</span>
+        <span class="entrance-distribution">出入口时间分布</span>
+        <span class="drive-in">驶入</span>
+        <span class="drive-out">驶出</span>
+      </div>
+      <TitleUpperLine></TitleUpperLine>
       <div class="chack-change">
         <span class="hours">时</span>
         <span class="days">日</span>
@@ -13,9 +18,11 @@
           <option value="">深葵路</option>
         </select>
       </div>
-      <div class="traffic-distribution-chart" ref="distributionChart" :style="getStyles(500, 1650)">
-
+      <div class="entrance-chart" ref="entrance" :style="getStyles(688, 1788)">
+     
       </div>
+       <!-- <div class="sharkChart"  ref="sharkingChart" :style="getStyles(462, 1169)">
+  </div> -->
   </div>
 </template>
 
@@ -39,14 +46,14 @@ export default {
        return `height : ${echartsRem(h)}px;width : ${echartsRem(w)}px;`
      },
      resizeHandle () {
-       let dom = this.$refs.distributionChart;
-       dom.style = this.getStyles(500, 1650)
+       let dom = this.$refs.entrance;
+       dom.style = this.getStyles(688, 1788)
        this.echart.resize()
      }
   },
     mounted(){
      window.addEventListener('resize', this.resizeHandle)
-     this.echart = echarts.init(this.$refs.distributionChart);
+     this.echart = echarts.init(this.$refs.entrance);
      let option = {
         color: ['#3398DB'],
         tooltip: {
@@ -91,20 +98,45 @@ export default {
 </script>
 
 <style lang="scss">
-  .traffic-distribution{
-    margin:1.01rem 0 0 0; 
-    h3{
+  .entrance{
+    .entrance-ranking{
+      font-size:0.5rem;
+      color:rgba(255,255,255,1);
+      padding-right: 0.89rem;
+    }
+    .entrance-distribution{
       color: #ffffff;
       font-size:0.87rem;
       font-weight:bolder;
+      // padding-right:3.29rem;
+      padding-right: 2.29rem;
     }
-    .undeline{
-     width: 12.48rem;
-     height: 0.18rem;
-     padding-bottom: 0.63rem;
-     margin-top: 0.32rem;
+    .drive-in{
+      display: inline-block;
+      width: 3rem;
+      height: 1.1rem;
+      background: #00f298;
+      border-radius: 4px 0px 0px 4px;
+      font-size: 0.42rem;
+      font-weight: 500;
+      color: #080808;
+      text-align: center;
+      line-height: 1.1rem;
     }
-   .chack-change{
+    .drive-out{
+      display: inline-block;
+      width: 3rem;
+      height: 1.1rem;
+      background: #00f298;
+      opacity: 0.3;
+      border-radius: 0px 4px 4px 0px;
+      font-size: 0.42rem;
+      font-weight: 500;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 1.1rem;
+    }
+    .chack-change{
       display: flex;
       .hours,.days,.month{
         display: inline-block;
@@ -129,7 +161,7 @@ export default {
         background:none;
         border:2px solid rgba(50,253,246,1);
         color: #FFFFFF;
-        margin-right: 3rem;
+        margin-right: 4.4rem;
       }
       .select-road{
         width: 7.3rem;
@@ -141,12 +173,11 @@ export default {
         color: #fff;
       }
     }
-    .traffic-distribution-chart{
-      width: 16.5rem;
-      height: 5.39rem;
+    .entrance-chart{
+      width: 20.89rem;
+      height: 6.88rem;
       background: pink;
       margin-top: 0.4rem;
     }
   }
-     
 </style>

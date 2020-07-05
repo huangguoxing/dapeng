@@ -9,7 +9,7 @@
 export default {
 name:'views',
 mounted() {
-  this.init();
+  // this.init();
 },
 methods: {
   // init() {
@@ -80,7 +80,7 @@ methods: {
 }
 </script>
 <style>
- .views{
+ #views{
    height:100%;
    background: url('../assets/images/transparent.png');
    background-size: 100% 100%;
