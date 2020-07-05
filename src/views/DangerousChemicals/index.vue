@@ -1,6 +1,7 @@
 <template>
   <div class="danger">
     <DpHeader><div>危化品</div></DpHeader>
+      <Dialog></Dialog>
     <div class="danger-chart">
         <div class="danger-left">
            <TodayFlow></TodayFlow>
@@ -20,6 +21,8 @@
 </template>
 
 <script>
+import Dialog from '../../components/common/dialog'
+
 import DpHeader from '../../components/content/DpHeader'
 import Warning from '../../components/content/Warning'
 import ThreeNav from '../../components/content/ThreeNav'
@@ -35,6 +38,7 @@ import TrackQuery from './children/TrackQuery'
 export default {
   name:'DangerousChemicals',
   components:{
+    Dialog,
     DpHeader,
     Warning,
     ThreeNav,
@@ -54,7 +58,7 @@ export default {
   position:absolute;
   height:100%;
   width:100%;
-  z-index: 2;
+  // z-index: 2;
 }
  .danger-chart{
    display: flex;

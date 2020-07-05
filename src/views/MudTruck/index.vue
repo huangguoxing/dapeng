@@ -1,6 +1,6 @@
 <template>
   <div class="danger">
-    <DpHeader><div>危化品</div></DpHeader>
+    <DpHeader><div>泥头车</div></DpHeader>
     <div class="danger-chart">
         <div class="danger-left">
            <TodayFlow></TodayFlow>
@@ -54,7 +54,7 @@ export default {
   position:absolute;
   height:100%;
   width:100%;
-  z-index: 2;
+  // z-index: 2;
 }
  .danger-chart{
    display: flex;
