@@ -7,6 +7,7 @@
           <!-- 头部线条 -->
       </div>
       <div class="titleLine">
+          <img class="left-button" src="../../assets/images/左右2.png" alt="">
           <ul class="titleUl">
             <li>交通运行</li>
             <li>文化旅游</li>
@@ -14,6 +15,7 @@
             <li>政务服务</li>
             <li>生态环境</li>
           </ul>
+          <img class="right-button" src="../../assets/images/左右1.png" alt="">
       </div>
       <div class="theme"><slot></slot></div>
       <div class="time">
@@ -40,11 +42,26 @@ export default {
   background-size: 100% 100%;
 }
 .titleLine {
+  position: relative;
   width: 28.6rem;
   height: 2.04rem;
   margin: 0 auto;
   background: url("../../assets/images/check_title.png");
   background-size: 100% 100%;
+  .left-button{
+    position: absolute;
+    width: 0.29rem;
+    height: 0.58rem;
+    left: 1.7rem;
+    top: 0.8rem;
+  }
+  .right-button{
+    position: absolute;
+    width:0.29rem;
+    height: 0.58rem;
+    right:1.7rem;
+    top:0.8rem; 
+  }
 }
 .theme{
   position: absolute;
@@ -54,6 +71,7 @@ export default {
   font-size:0.67rem;
 }
 .titleUl {
+  position: relative;
   display: flex;
   height: 2.04rem;
   color: #ffffff;
@@ -65,6 +83,7 @@ export default {
     font-size: 0.75rem;
   }
 }
+
 .logo {
   position: absolute;
   left: 50%;
