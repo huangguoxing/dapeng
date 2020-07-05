@@ -78,9 +78,9 @@ export default {
       padding-right: 0.89rem;
     }
     .entrance-distribution{
+      color: #ffffff;
       font-size:0.87rem;
       font-weight:bolder;
-      color:rgba(255,255,255,1);
       padding-right:3.29rem;
     }
     .drive-in{

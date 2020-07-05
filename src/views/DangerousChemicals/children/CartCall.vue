@@ -45,7 +45,7 @@ export default {
   }
   .car-call-chart{
     height: 5rem;
-    width: 20.89rem;
+    width: 18rem;
     background: pink;
     margin-top: 0.42rem;
   }

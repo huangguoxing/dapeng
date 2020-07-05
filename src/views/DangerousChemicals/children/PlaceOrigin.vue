@@ -21,9 +21,12 @@ export default {
 <style lang="scss">
     .place-from{
       display: inline-block;
-      font-size:0.97rem;
+      // font-size:0.97rem;
+      // font-weight:bolder;
+      // color:rgba(255,255,255,1);
+      color: #ffffff;
+      font-size:0.87rem;
       font-weight:bolder;
-      color:rgba(255,255,255,1);
       padding-right:11.6rem;
       margin-top: 1.79rem;
     }

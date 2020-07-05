@@ -30,7 +30,8 @@ export default {
     margin:1.01rem 0 0 0; 
     h3{
       color: #ffffff;
-
+      font-size:0.87rem;
+      font-weight:bolder;
     }
     .undeline{
      width: 12.48rem;
@@ -76,7 +77,7 @@ export default {
       }
     }
     .traffic-distribution-chart{
-      width: 20.89rem;
+      width: 18rem;
       height: 6.88rem;
       background: pink;
       margin-top: 0.4rem;

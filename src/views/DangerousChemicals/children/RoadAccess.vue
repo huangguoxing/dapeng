@@ -17,9 +17,9 @@ export default {
 <style lang="scss">
   .road-access{
     h3{
-      font-size:0.87rem;
-      font-weight:bolder;
-      color:rgba(255,255,255,1);
+    font-size:0.87rem;
+    font-weight:bolder;
+    color:rgba(255,255,255,1);
     }
     .undeline{
      width: 12.48rem;
@@ -29,7 +29,7 @@ export default {
     }
     .road-access-chart{
       //width: 12.45rem;
-      width: 20.89rem;
+      width: 18rem;
       height: 5rem;
       background: yellowgreen;
     }

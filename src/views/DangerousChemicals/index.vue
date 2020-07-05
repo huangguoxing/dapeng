@@ -14,11 +14,15 @@
           <TrackQuery></TrackQuery>
         </div>
    </div>
+    <Warning></Warning>
+    <ThreeNav></ThreeNav>
   </div>
 </template>
 
 <script>
 import DpHeader from '../../components/content/DpHeader'
+import Warning from '../../components/content/Warning'
+import ThreeNav from '../../components/content/ThreeNav'
 
 import TodayFlow from './children/TodayFlow' 
 import Entrance from './children/Entrance' 
@@ -32,6 +36,8 @@ export default {
   name:'DangerousChemicals',
   components:{
     DpHeader,
+    Warning,
+    ThreeNav,
     TodayFlow,
     Entrance,
     PlaceOrigin,
@@ -55,7 +61,7 @@ export default {
  }
  .danger-right{
   // width:12.76rem;
-   width:21rem;
+   width:18rem;
   // background: pink;
  }
 </style>

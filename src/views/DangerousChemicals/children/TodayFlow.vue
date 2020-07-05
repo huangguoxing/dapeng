@@ -74,8 +74,10 @@ export default {
    height: 0.18rem;
  }
  h3{
-   color: #ffffff;
-   font-size: 0.6667rem;
+  color: #ffffff;
+  font-size:0.87rem;
+  font-weight:bolder;
+  //  font-size: 0.6667rem;
  }
 }
   .carType {

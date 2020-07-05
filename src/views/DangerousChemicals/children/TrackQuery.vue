@@ -17,9 +17,10 @@ export default {
 <style lang="scss">
   .track-query{
      h3{
-      font-size:0.97rem;
+      color: #ffffff;
+      font-size:0.87rem;
       font-weight:bolder;
-      color:rgba(255,255,255,1);
+      margin-top:1rem;
      }
      .undeline{
      width: 12.48rem;
