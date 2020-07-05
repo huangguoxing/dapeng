@@ -18,7 +18,7 @@
           <option value="">深葵路</option>
         </select>
       </div>
-      <div class="entrance-chart" ref="entrance" :style="getStyles(688, 2089)">
+      <div class="entrance-chart" ref="entrance" :style="getStyles(688, 1788)">
      
       </div>
        <!-- <div class="sharkChart"  ref="sharkingChart" :style="getStyles(462, 1169)">
@@ -47,26 +47,50 @@ export default {
      },
      resizeHandle () {
        let dom = this.$refs.entrance;
-       dom.style = this.getStyles(688, 2089)
+       dom.style = this.getStyles(688, 1788)
        this.echart.resize()
      }
   },
     mounted(){
      window.addEventListener('resize', this.resizeHandle)
-      this.echart = echarts.init(this.$refs.entrance);
-  let option = {
-    xAxis: {
-        type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-    },
-    yAxis: {
-        type: 'value'
-    },
-    series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
-        type: 'line'
-    }]
-};
+     this.echart = echarts.init(this.$refs.entrance);
+     let option = {
+        color: ['#3398DB'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun','a','b','c','d','e','f'],
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '直接访问',
+                type: 'bar',
+                barWidth: '60%',
+                data: [10, 52, 200, 334, 390, 330, 220,10, 52, 200, 334, 390, 330, 220]
+            }
+        ]
+    };
     this.echart.setOption(option);
     // console.log(echartsRem(500),65555555)
   }
@@ -84,7 +108,8 @@ export default {
       color: #ffffff;
       font-size:0.87rem;
       font-weight:bolder;
-      padding-right:3.29rem;
+      // padding-right:3.29rem;
+      padding-right: 2.29rem;
     }
     .drive-in{
       display: inline-block;
@@ -115,7 +140,7 @@ export default {
       display: flex;
       .hours,.days,.month{
         display: inline-block;
-        width: 3rem;
+        width: 2rem;
         height: 1.2rem;
         border: 2px solid #32fdf6;
         border-radius: 4px 0px 0px 4px;
@@ -136,11 +161,11 @@ export default {
         background:none;
         border:2px solid rgba(50,253,246,1);
         color: #FFFFFF;
-        margin-right: 6.4rem;
+        margin-right: 4.4rem;
       }
       .select-road{
         width: 7.3rem;
-        height: 1.6rem;
+        height: 1.2rem;
         font-size: 0.3748rem;
         border: 2px solid rgba(50,253,246,1);
         border-radius: 2px;

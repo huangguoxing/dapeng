@@ -31,10 +31,11 @@ export default {
     font-size:0.87rem;
     font-weight:bolder;
     color:rgba(255,255,255,1);
+    margin-top: 1rem;
   }
   .select-road{
     width: 7.3rem;
-    height: 1.6rem;
+    height: 1.2rem;
     font-size: 0.3748rem;
     border: 2px solid rgba(50,253,246,1);
     border-radius: 2px;
@@ -43,7 +44,7 @@ export default {
   }
   .car-call-chart{
     height: 5rem;
-    width: 18rem;
+    width: 16.5rem;
     background: pink;
     margin-top: 0.42rem;
   }

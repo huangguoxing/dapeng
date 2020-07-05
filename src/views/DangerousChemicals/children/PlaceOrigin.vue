@@ -30,7 +30,7 @@ export default {
       color: #ffffff;
       font-size:0.87rem;
       font-weight:bolder;
-      padding-right:11.6rem;
+      padding-right:9.2rem;
       margin-top: 1.79rem;
     }
     .drive-in{
@@ -59,7 +59,7 @@ export default {
     line-height: 1.1rem;
   }
   .place-chart{
-    width: 20.89rem;
+    width: 17.89rem;
     height: 6.88rem;
     background:pink;
   }

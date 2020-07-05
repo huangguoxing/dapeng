@@ -42,11 +42,11 @@ export default {
      padding-bottom: 0.63rem;
      margin-top: 0.32rem;
     }
-    .chack-change{
+   .chack-change{
       display: flex;
       .hours,.days,.month{
         display: inline-block;
-        width: 3rem;
+        width: 2rem;
         height: 1.2rem;
         border: 2px solid #32fdf6;
         border-radius: 4px 0px 0px 4px;
@@ -67,11 +67,11 @@ export default {
         background:none;
         border:2px solid rgba(50,253,246,1);
         color: #FFFFFF;
-        margin-right: 6.4rem;
+        margin-right: 3rem;
       }
       .select-road{
         width: 7.3rem;
-        height: 1.6rem;
+        height: 1.2rem;
         font-size: 0.3748rem;
         border: 2px solid rgba(50,253,246,1);
         border-radius: 2px;
@@ -80,8 +80,8 @@ export default {
       }
     }
     .traffic-distribution-chart{
-      width: 18rem;
-      height: 6.88rem;
+      width: 16.5rem;
+      height: 5.39rem;
       background: pink;
       margin-top: 0.4rem;
     }

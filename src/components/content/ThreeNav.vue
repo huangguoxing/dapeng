@@ -30,7 +30,10 @@ export default {
 <style lang="scss">
 .three-nav-container{
   height: 3.08rem;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom:0;
 }
 .undeline-container{
   height: 100%;

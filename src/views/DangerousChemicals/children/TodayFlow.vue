@@ -85,7 +85,8 @@ export default {
       flex-wrap: wrap;
       .carItem {
         display: flex;
-        margin-right: 1.3rem;
+        // margin-right: 1.3rem;
+        margin-right: 2.3rem;
         padding-bottom: 1.11rem;
         .carText {
           padding-left: 0.31rem;
